@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Pokemons vanilla</title>
+  </head>
+  <body>
+    <div class="Log">
+      <figure>
+        <img src="/Fotos/Pokes.png" alt="" />
+      </figure>
+    </div>
+
+    <div class="sele">
+      <label for="Hola">Type pokemons:</label>
+      <select name="Hola" id="TypePokes"></select>
+    </div>
+    <main class="main"></main>
+
+    <template class="Tarjetita">
+      <div class="Card">
+        <div class="face front">
+          <figure><img src="" alt="" class="img" /></figure>
+        </div>
+
+        <div class="face back">
+          <h3>Info Poke</h3>
+          <p>Name:</p>
+          <div class="Name"></div>
+          <p>Habilidades:</p>
+          <ul class="abilitis Name"></ul>
+          <p>Tipo:</p>
+          <ul class="types Name"></ul>
+        </div>
+      </div>
+    </template>
+    <script src="app.js" type="module"></script>
+  </body>
+</html>
