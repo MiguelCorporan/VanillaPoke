@@ -44,7 +44,7 @@ const CreaPokemones = (DataPokemon) => {
   } = DataPokemon;
 
   const Rabilitis = abilities.map(({ ability: { name } }) => name);
-
+  console.log(Rabilitis);
   const Rtypes = types.map(({ type: { name } }) => name);
   // console.log(Rabilitis, Rtypes, front_default);
   TarjetaPokemon({ name, front: front_default, Rabilitis, Rtypes });
@@ -58,6 +58,7 @@ const SacaPokemones = (OnePokemon) => {
 
 const Pokemones = (Pokemons) => {
   Pokemons.forEach((OnePoke) => {
+    console.log(OnePoke);
     const { pokemon } = OnePoke;
     SacaPokemones(pokemon.url);
   });
